@@ -62,6 +62,59 @@ def register(name: str, email: str, password: str):
     return {"name": name, "email": email, "password": password }
 
 @app.post("/auth/login")
-def register(name: str, email: str, password: str):
-    print(name, email, password)
-    return {"name": name, "email": email, "password": password }
+def register(email: str, password: str):
+    print(email, password)
+    return {"email": email, "password": password }
+
+@app.post("/auth/login/{user_id}")
+def register(email: str, password: str):
+    print(email, password)
+    return {"email": email, "password": password }
+
+@app.post("/workouts")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.get("/workouts")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.delete("/workouts")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.post("/exercises ")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.get("/exercises ")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.delete("/exercises ")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.post("/nutrition")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.get("/nutrition")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.delete("/nutrition")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.post("/progress")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.get("/progress")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
+    
+@app.delete("/progress")
+def workout(name: str, exercise: str, duration: int):
+    print(name, exercise, duration)
